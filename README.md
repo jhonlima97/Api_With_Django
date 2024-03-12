@@ -6,4 +6,4 @@ CRUD completo para una API utilizando:
 - mysqlclient   2.2.4  
 - PyMySQL       1.1.0
 
-No hay templates, es una API para BackEnd
+No hay templates HTML alguno, solo es una API para BackEnd
