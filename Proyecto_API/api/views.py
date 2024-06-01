@@ -43,7 +43,7 @@ class CompanyView(View):
                 foundation = int(data['foundation'])
                 current_year = datetime.now().year
                 if not (1900 <= foundation <= current_year):
-                    errors['foundation'] = "La'foundation' debe ser un año entre 1900 y el año actual."
+                    errors['foundation'] = "La 'foundation' debe ser un año entre 1900 y el año actual."
             except ValueError:
                 errors['foundation'] = "El campo 'foundation' debe ser un año válido."
 
@@ -61,9 +61,8 @@ class CompanyView(View):
         if id is not None:  # Si se proporciona un ID específico
             try:
                 id = int(id)
-                if not (1 <= id <= 99):
-                    return JsonResponse({'message': 
-                                         "El id debe ser un entero de 1 al 99."}, status=406)
+                if not (1 <= id <= 999):
+                    return JsonResponse({'message': "El id debe ser un entero de 1 al 999."}, status=406)
 
                 company = Company.objects.get(id=id)
                 datos = {'message': "Success", 'company': {
@@ -135,9 +134,8 @@ class CompanyView(View):
         if not str(id).isdigit():
             return JsonResponse({'message': "El ID debe ser un número entero."}, status=400)
         id = int(id)
-        if not 1 <= id <= 99:
-            return JsonResponse({'message': 
-                    "El id debe ser un entero de 1 al 99."}, status=406)
+        if not 1 <= id <= 999:
+            return JsonResponse({'message': "El id debe ser un entero de 1 al 999."}, status=406)
         try:
             company = Company.objects.get(id=id)
             company.delete()
