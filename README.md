@@ -7,4 +7,6 @@ CRUD completo para una API utilizando:
 - PyMySQL          1.1.1  
 - pyhon-decouple   3.8    
 
+Para probar la api ir a, http://127.0.0.1:8000/api/v1/companies/  
+
 No hay templates HTML alguno, solo es una API para BackEnd
