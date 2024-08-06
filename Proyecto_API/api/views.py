@@ -56,7 +56,7 @@ class CompanyView(View):
 
         return errors
 
-    # CRUD completo para una API
+    # CRUD completo para una API REST
     def get(self, request, id=None):
         if id is not None:  # Si se proporciona un ID específico
             try:

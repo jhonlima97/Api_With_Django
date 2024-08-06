@@ -7,7 +7,7 @@ CRUD completo para una API utilizando:
 - PyMySQL          1.1.1  
 - pyhon-decouple   3.8    
 
-Para probar la API, ingresar a: (env) D:\sistemas\Api_With_Django\Proyecto_API>  
+Para probar la API, primero activar el entorno virtual (env)\Api_With_Django\Proyecto_API>  
 Luego ir a, http://127.0.0.1:8000/api/v1/companies/  
 
-No hay templates HTML alguno, solo es una API para BackEnd
+No hay templates HTML alguno, solo es una API para BackEnd  
